@@ -27,8 +27,7 @@ h6 {
 
 ul {
   list-style-type: none;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   padding-left: 0;
 }
 
@@ -58,15 +57,15 @@ img {
 
 .visually-hidden {
   position: absolute;
-  white-space: nowrap;
   width: 1px;
   height: 1px;
-  overflow: hidden;
+  margin: -1px;
   border: 0;
   padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+  overflow: hidden;
 }
 
 
@@ -293,7 +292,10 @@ img {
   background-color: var(--color-bg);
 }
 
-.team-container {}
+.team-container {
+  margin-right: auto;
+  margin-left: auto;
+}
 
 .team-title {
   font-weight: 700;
@@ -303,16 +305,15 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color-primary);
-  display: inline-block;
   text-align: center;
   margin-bottom: 72px;
   max-width: 163px;
-
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .team-list {
   display: flex;
-
   gap: 24px;
 }
 
@@ -343,9 +344,6 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-secondary);
   text-align: center;
-
-
-
 }
 
 /* *----------footer-------------- */
