@@ -46,8 +46,8 @@ img {
 .container {
   width: 100%;
   max-width: 1158px;
-  padding: 0 15px;
   margin: 0 auto;
+  padding: 0 15px;
   outline: 2px solid red;
 }
 
@@ -80,9 +80,7 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  padding: 24px 0;
-
-
+  padding: 0 15px;
 }
 
 .header-nav {
@@ -117,15 +115,14 @@ img {
 
 }
 
-.header-menu-item {
-  padding: 24px 0;
-}
+.header-menu-item {}
 
 .header-menu-link {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-primary);
+  padding: 24px 0;
 }
 
 .header-menu-link:hover {
